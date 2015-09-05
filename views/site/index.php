@@ -1,7 +1,7 @@
 <?php
-
 Yii::$app->db->open();
 /* @var $this yii\web\View */
+use yii\helpers\Html;
 
 $this->title = 'รพ.เชียงคาน';
 ?>
@@ -11,10 +11,15 @@ $this->title = 'รพ.เชียงคาน';
         <h1>ติดตั้ง Yii สำเร็จแล้วครับ</h1>
 
         <p class="lead">วันที่ 5 กันยายน 2558</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
     </div>
     
+    
+    <?= Html::a('ลิงค์ที่ 1',['send/send'],['class' => 'btn btn-success']); ?>
+    
+    <?php echo '<br/>'; ?>
+    
+    <?= Html::a('ลิงค์ที่ 2',[''],['class' => 'btn btn-danger']); ?>
+    
+
 </div>
 
-    
